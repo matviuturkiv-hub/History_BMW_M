@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історія покоління BMW</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: #000000; /* Чорний колір тексту */
+            
+            /* Налаштування фону, щоб зображення fon.jpg повністю вміщалося і НЕ обрізалося */
+            background-image: url('fon.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+            background-size: contain; /* Картинка повністю вміщається без обрізання */
+            background-color: #111; /* Темний колір для заповнення по краях, якщо екран ширший */
+            
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .main-card {
+            background-color: rgba(255, 255, 255, 0.75); /* Напівпрозорий фон картки, щоб через нього було видно фото */
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 750px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            margin-top: 30px;
+            border: 2px solid #000;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            margin-top: 0;
+            color: #000;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.15em;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            color: #000;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        /* Напівпрозорі кнопки, щоб вони не перекривали фото повністю */
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            border: 2px solid #000;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .nav-links a:hover {
+            background-color: #000;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <h1>Історія покоління BMW</h1>
+        
+        <p>
+            Ласкаво просимо до світу спортивних автомобілів підрозділу BMW M! 
+            Тут ви зможете детально ознайомитися з еволюцією легендарних високопродуктивних моделей. 
+            Оберіть модель нижче, щоб перейти на її окрему сторінку та переглянути хронологію від найпершого покоління до найсучаснішого.
+        </p>
+
+        <!-- Посилання знизу для переходу на окремі сторінки -->
+        <div class="nav-links">
+            <a href="bmw_m2.html">BMW M2</a>
+            <a href="bmw_m3.html">BMW M3</a>
+            <a href="bmw_m4.html">BMW M4</a>
+            <a href="bmw_m5.html">BMW M5</a>
+            <a href="bmw_m6.html">BMW M6</a>
+            <a href="bmw_m8.html">BMW M8</a>
+        </div>
+    </div>
+
+</body>
+</html>
